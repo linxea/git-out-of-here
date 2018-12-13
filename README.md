@@ -1,5 +1,23 @@
 ## TODO
 
+### 0. Authenticate Git
+
+1. Using HTTPS
+
+- \$ git remote add origin https://username:password@github.com/linxea/git-out-of-here.git
+
+2. Or using SSH
+
+- Refer to https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
+
+  - \$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+  - $eval "$(ssh-agent -s)"
+  - \$ ssh-add -K ~/.ssh/id_rsa
+  - \$ pbcopy < ~/.ssh/id_rsa.pub
+
+- Add SSH key into Github
+  https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
+
 ### 1. Create a repo
 
 ### 2. Clone to local machine using `git clone`
